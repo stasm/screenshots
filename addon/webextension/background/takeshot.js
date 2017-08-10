@@ -8,12 +8,11 @@ this.takeshot = (function() {
   const { sendEvent } = analytics;
 
   communication.register("takeShot", catcher.watchFunction((sender, options) => {
-    let { captureType, captureText, scroll, selectedPos, shotId, shot } = options;
+    let { captureType, captureText, scroll, selectedPos, shotId, shot, imageBlob } = options;
     shot = new Shot(main.getBackend(), shotId, shot);
     shot.favicon = sender.tab.favIconUrl;
     let capturePromise = Promise.resolve();
     let openedTab;
-    let blob;
     if (!shot.clipNames().length) {
       // canvas.drawWindow isn't available, so we fall back to captureVisibleTab
       capturePromise = screenshotPage(selectedPos, scroll).then((dataUrl) => {
@@ -32,8 +31,10 @@ this.takeshot = (function() {
         });
       });
     }
-    blob = base64ToBinary(shot.getClip(shot.clipNames()[0]).image.url);
-    shot.getClip(shot.clipNames()[0]).image.url = "";
+    if (!imageBlob) {
+      imageBlob = base64ToBinary(shot.getClip(shot.clipNames()[0]).image.url);
+      shot.getClip(shot.clipNames()[0]).image.url = "";
+    }
     let shotAbTests = {};
     let abTests = auth.getAbTests();
     for (let testName of Object.keys(abTests)) {
@@ -48,7 +49,7 @@ this.takeshot = (function() {
       return browser.tabs.create({url: shot.creatingUrl})
     }).then((tab) => {
       openedTab = tab;
-      return uploadShot(shot, blob);
+      return uploadShot(shot, imageBlob);
     }).then(() => {
       return browser.tabs.update(openedTab.id, {url: shot.viewUrl}).then(
         null,

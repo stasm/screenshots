@@ -47,8 +47,8 @@ const selfPackage = require("./package.json");
 const { b64EncodeJson, b64DecodeJson } = require("./b64");
 const l10n = require("./l10n");
 const multer = require("multer");
-const upload = multer({ dest: 'uploads/' });
-const fs = require("fs");
+const storage = multer.memoryStorage()
+const upload = multer({ storage: storage });
 
 const PROXY_HEADER_WHITELIST = {
   "content-type": true,
@@ -590,7 +590,7 @@ app.put("/data/:id/:domain", upload.single('blob'), function(req, res) {
   }
   let bodyObj = JSON.parse(req.body.shot);
   let clipId = Object.getOwnPropertyNames(bodyObj.clips)[0];
-  let b64 = new Buffer(fs.readFileSync(req.file.path)).toString("base64")
+  let b64 = req.file.buffer.toString("base64");
   b64 = "data:image/png;base64," + b64;
   bodyObj.clips[clipId].image.url = b64;
   if (typeof bodyObj != "object") {

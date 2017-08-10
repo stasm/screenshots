@@ -12,7 +12,6 @@ cookie-jar.txt
 .venv
 /scratch
 /data
-/uploads
 *.log
 /.env.local
 /bin/.commit-new-version-copy
