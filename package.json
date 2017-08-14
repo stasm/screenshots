@@ -1,7 +1,7 @@
 {
   "name": "firefox-screenshots",
   "description": "An experiment in creating better shareable versions of content.",
-  "version": "13.1.0",
+  "version": "14.0.0",
   "author": "Mozilla (https://mozilla.org/)",
   "bugs": {
     "url": "https://github.com/mozilla-services/screenshots/issues"
@@ -33,7 +33,7 @@
     "node-statsd": "0.1.1",
     "nodemon": "1.11.0",
     "nodify-uuid": "0.0.1",
-    "pg": "6.2.3",
+    "pg": "6.2.5",
     "pg-patcher": "0.4.0",
     "raven": "2.1.1",
     "raven-js": "3.17.0",
@@ -90,6 +90,7 @@
     "test": "make bootstrap_zip && mocha test/",
     "test:selenium": "make bootstrap_zip && mocha test/test.js",
     "make_versions_exact": "node bin/build-scripts/make_versions_exact.js",
-    "update_outdated": "david update && npm run make_versions_exact && npm update && npm outdated"
+    "update_outdated": "david update && npm run make_versions_exact && npm update && npm outdated",
+    "fill_database": "make .venv && ./.venv/bin/python  ./bin/load_test_exercise.py -q --little-image --create=50 --read-shot=0 --read-my-shots=0 --search=0 --new-account http://localhost:10080"
   }
 }

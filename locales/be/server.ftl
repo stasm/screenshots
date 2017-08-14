@@ -8,7 +8,7 @@
 [[ global ]]
 
 gMyShots = Мае здымкі
-gHomeLink = Хатняя
+gHomeLink = Хатняя старонка
 gNoShots
     .alt = здымкі не знойдзены
 gScreenshotsDescription = Рабіць скрыншоты стала прасцей. Рабіце, захоўвайце і дзяліцеся скрыншотамі, не пакідаючы Firefox.
@@ -18,6 +18,7 @@ gScreenshotsDescription = Рабіць скрыншоты стала прасц�
 
 // Note: link text for a link to mozilla.org
 footerLinkMozilla = Mozilla
+footerLinkTerms = Умовамі выкарыстання
 footerLinkPrivacy = Паведамленне аб прыватнасці
 footerLinkDMCA = Паведаміць аб парушэнні аўтарскіх правоў
 footerLinkDiscourse = Даць водгук
@@ -31,6 +32,7 @@ footerLinkRemoveAllData = Выдаліць усе дадзеныя
 // creatingPageTitleDefault.
 creatingPageTitle = Стварэнне { $title }
 creatingPageTitleDefault = старонка
+creatingPageWaitMessage = Захаванне здымка…
 
 
 [[ Home page ]]
@@ -63,7 +65,7 @@ homePageCookiesLink = Кукі
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = Пацвердзіце выдаленне ўліковага запісу
+leavePageRemoveAllData = Выдаліць усе дадзеныя
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = Каб выдаліць уліковы запіс, у вас павінен быць усталяваны Firefox Screenshots
 leavePageErrorGeneric = Здарылася памылка

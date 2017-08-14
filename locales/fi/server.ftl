@@ -18,6 +18,7 @@ gScreenshotsDescription = Kuvakaappaukset helposti. Ota, tallenna ja jaa kuvakaa
 
 // Note: link text for a link to mozilla.org
 footerLinkMozilla = Mozilla
+footerLinkTerms = Käyttöehdot
 footerLinkPrivacy = Tietosuojakäytäntö
 footerLinkDMCA = Ilmoita immateriaalioikeuksien loukkauksesta
 footerLinkDiscourse = Anna plautetta
@@ -31,6 +32,7 @@ footerLinkRemoveAllData = Poista kaikki tiedot
 // creatingPageTitleDefault.
 creatingPageTitle = Luodaan: { $title }
 creatingPageTitleDefault = sivu
+creatingPageWaitMessage = Tallennetaan kaappausta…
 
 
 [[ Home page ]]
@@ -63,7 +65,7 @@ homePageCookiesLink = Evästeet
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = Vahvista tilin poisto
+leavePageRemoveAllData = Poista kaikki tiedot
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = Tilin poistamiseksi Firefox Screenshots pitää olla asennettuna
 leavePageErrorGeneric = Tapahtui virhe

@@ -32,6 +32,7 @@ footerLinkRemoveAllData = Buang Semua Data
 // creatingPageTitleDefault.
 creatingPageTitle = Mencipta { $title }
 creatingPageTitleDefault = halaman
+creatingPageWaitMessage = Menyimpan syot anda...
 
 
 [[ Home page ]]
@@ -64,7 +65,7 @@ homePageCookiesLink = Kuki
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = Sahkan penghapusan akaun
+leavePageRemoveAllData = Buang Semua Data
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = Anda mesti ada Firefox Screenshots yang dipasang untuk menghapuskan akaun anda
 leavePageErrorGeneric = Ada ralat

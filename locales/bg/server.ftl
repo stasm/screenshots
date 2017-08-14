@@ -18,6 +18,7 @@ gScreenshotsDescription = Лесни снимки на екрана. Прави�
 
 // Note: link text for a link to mozilla.org
 footerLinkMozilla = Mozilla
+footerLinkTerms = Условия
 footerLinkPrivacy = Политика на поверителност
 footerLinkDMCA = Доклад за нарушение на авторско право
 footerLinkDiscourse = Обратна връзка
@@ -31,6 +32,7 @@ footerLinkRemoveAllData = Премахване на всички данни
 // creatingPageTitleDefault.
 creatingPageTitle = Създаване на { $title }
 creatingPageTitleDefault = страница
+creatingPageWaitMessage = Запазване на снимката…
 
 
 [[ Home page ]]
@@ -63,7 +65,7 @@ homePageCookiesLink = Бисквитки
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = Потвърдете изтриване на сметка
+leavePageRemoveAllData = Премахване на всички данни
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = Трябва да имате инсталиран Firefox Screenshots, за да изтриете вашата сметка
 leavePageErrorGeneric = Възникна грешка
@@ -110,7 +112,7 @@ shotPageConfirmDeletion = Сигурни ли сте, че желаете изо
 shotPageExpirationMessage = Ако не правите нищо тази снимка ще бъде необратимо премахната { $timediff }
 // Note: { $date } is a placeholder for a localized future date as returned by Date.toLocaleString.
 // For example, in en-US, { $date } could be "7/12/2017, 1:52:50 PM".
-shotPageRestoreButton = 
+shotPageRestoreButton = възстановяване до { $date }
 shotPageExpiredMessage = Тази снимка е с изтекла давност.
 // Note: This phrase is followed by an empty line, then the URL of the source page
 shotPageExpiredMessageDetails = Това е страницата, от която е направена:
@@ -149,14 +151,14 @@ shotPageExpiresIn = изтича { $timediff }
 shotPageExpired = изтекло { $timediff }
 timeDiffJustNow = току-що
 timeDiffMinutesAgo = { $num ->
-        [one] преди 1 минута
+        [one] преди минута
        *[other] преди { $number } минути
     }
 timeDiffHoursAgo = { $num ->
-        [one] преди 1 час
+        [one] преди час
        *[other] преди { $number } часа
     }
-timeDiffDaysAgo = timeDiffDaysAgo = { $number ->
+timeDiffDaysAgo = { $num ->
         [one] вчера
        *[other] преди { $number } дена
     }
@@ -171,7 +173,7 @@ timeDiffFutureHours = { $num ->
     }
 timeDiffFutureDays = { $num ->
         [one] утре
-       *[other] след ${ number } дни
+       *[other] след { $number } дни
     }
 
 
@@ -189,7 +191,7 @@ shotIndexPageSearchPlaceholder
     .placeholder = Търсене в моите снимки
 shotIndexPageSearchButton
     .title = Търсене
-shotIndexPageNoShotsMessage = Нямате запазени снимки.
+shotIndexPageNoShotsMessage = Няма запазени снимки.
 shotIndexPageNoShotsInvitation = Хайде, направете няколко.
 shotIndexPageLookingForShots = Търсене на вашите снимки…
 shotIndexPageNoSearchResultsIntro = Хмм

@@ -104,6 +104,8 @@ shotPageExpirationMessage = आपण काहीही न केल्या�
 // For example, in en-US, { $date } could be "7/12/2017, 1:52:50 PM".
 shotPageRestoreButton = { $date } पर्यंत पुनर्संचयित करा
 shotPageExpiredMessage = हा शॉट कालबाह्य झाला आहे.
+// Note: This phrase is followed by an empty line, then the URL of the source page
+shotPageExpiredMessageDetails = या पृष्ठावरुन हे तयार करण्यात आले होते:
 shotPageDeleteButton
     .title = हा शॉट हटवा
 shotPageAbuseButton
@@ -111,8 +113,15 @@ shotPageAbuseButton
 shotPageDownloadShot
     .title = डाउनलोड
 shotPageDownload = डाउनलोड
+shotPageScreenshotsDescription = Screenshots झाले सोपे. Firefox ला न सोडता स्क्रीनशॉट्स घ्या, जतन करा आणि सामयिक करा.
 shotPageUpsellFirefox = आत्ता Firefox मिळवा
 shotPageDMCAMessage = तृतीय पक्ष बौद्धिक संपत्ती दाव्यामुळे हा शॉट उपलब्ध नाही.
+// Note: { $dmca } is a placeholder for a link to send email (a 'mailto' link)
+shotPageDMCAContact = अधिक माहिती साठी कृपया { $dmca } ला इमेल करा.
+// Note: do not translate 'Firefox Screenshots' when translating this string
+shotPageDMCAWarning = आपले शॉट्सवर जर अनेक दावे असतील, तर आम्ही आपला Firefox Screenshots वापर थांबवु शकतो.
+// Note: { $url } is a placeholder for a shot page URL
+shotPageDMCAIncludeLink = कृपया आपल्या इमेल मध्ये या शॉटची URLसामील करा: { $url }
 // Note: shotPageSelectTime is a placeholder label for the time selection dropdown.
 shotPageSelectTime = वेळ निवडा
 shotPageKeepIndefinitely = अनिश्चित काळासाठी
@@ -180,7 +189,21 @@ shotIndexPageConfirmShotDelete = हा शॉट हटवायचा?
 // all metrics strings are optional for translation
 [[ Metrics page ]]
 
+// Note: 'Firefox Screenshots' should not be translated
+metricsPageTitle = Firefox Screenshots मेट्रिक्स
 metricsPageTotalsQueryTitle = एकूण
+// Note: Screenshots is an abbreviation for Firefox Screenshots, and should not be translated.
+metricsPageTotalsQueryDescription = Screenshots चा आढावा
+metricsPageTotalsQueryDevices = नोंदवलेले एकुण साधने 
+metricsPageTotalsQueryActiveShots = चालु शॉट्स
+metricsPageTotalsQueryExpiredShots = कालबाह्य (पण पुनर्प्राप्त करण्याजोगे)
+metricsPageTotalsQueryExpiredDeletedShots = कालबाह्य (आणि नष्ट झालेले)
+metricsPageShotsQueryTitle = दिवसानुसार शॉट्स
+metricsPageShotsQueryDescription = प्रत्येक दिवसाला तयार केलेले शॉट्स (मागील 30 दिवसांसाठी)
+metricsPageShotsQueryCount = शॉट्सची संख्या
+metricsPageShotsQueryDay = दिवस
+metricsPageUsersQueryTitle = दिवसा नुसार वापरकर्ते
+metricsPageUsersQueryDescription = वापरकर्त्यांची संख्या ज्यांनी किमान एक शॉट तरी तयार केला, दिवसानुसार (मागील 30 दिवसांसाठी)
 metricsPageUsersQueryCount = वापरकर्त्यांची संख्या
 metricsPageUsersQueryDay = दिवस
 metricsPageRetentionQueryUsers = वापरकर्त्यांची संख्या

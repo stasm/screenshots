@@ -32,6 +32,7 @@ footerLinkRemoveAllData = Minden adat törlése
 // creatingPageTitleDefault.
 creatingPageTitle = Létrehozás: { $title }
 creatingPageTitleDefault = oldal
+creatingPageWaitMessage = Képernyőkép mentése…
 
 
 [[ Home page ]]
@@ -64,7 +65,7 @@ homePageCookiesLink = Sütik
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = Fiók törlésének jóváhagyása
+leavePageRemoveAllData = Összes adat eltávolítása
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = A fiókja törléséhez telepítve kell lennie a Firefox Screentshotsnak
 leavePageErrorGeneric = Hiba történt

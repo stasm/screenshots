@@ -32,6 +32,7 @@ footerLinkRemoveAllData = Supprimer toutes les données
 // creatingPageTitleDefault.
 creatingPageTitle = Capture de { $title }
 creatingPageTitleDefault = page
+creatingPageWaitMessage = Enregistrement de votre capture…
 
 
 [[ Home page ]]
@@ -64,7 +65,7 @@ homePageCookiesLink = Cookies
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = Confirmer la suppression du compte
+leavePageRemoveAllData = Supprimer toutes les données
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = Firefox Screenshots doit être installé pour pouvoir procéder à la suppression du compte.
 leavePageErrorGeneric = Une erreur s’est produite

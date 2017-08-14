@@ -32,6 +32,7 @@ footerLinkRemoveAllData = Alle Daten entfernen
 // creatingPageTitleDefault.
 creatingPageTitle = { $title } wird erstellt
 creatingPageTitleDefault = Seite
+creatingPageWaitMessage = Ihre Bildschirmfoto wird gespeichert…
 
 
 [[ Home page ]]
@@ -64,7 +65,7 @@ homePageCookiesLink = Cookies
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = Kontenlöschung bestätigen
+leavePageRemoveAllData = Alle Daten entfernen
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = Firefox Screenshots muss installiert sein, um Ihr Konto zu löschen
 leavePageErrorGeneric = Ein Fehler ist aufgetreten

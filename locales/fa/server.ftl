@@ -32,6 +32,7 @@ footerLinkRemoveAllData = حذف همه‌ی داده‌ها
 // creatingPageTitleDefault.
 creatingPageTitle = ایجاد { $title }
 creatingPageTitleDefault = صفحه
+creatingPageWaitMessage = در حال ذخیره کردن عکس شما…
 
 
 [[ Home page ]]
@@ -64,7 +65,7 @@ homePageCookiesLink = کوکی‌ها
 
 [[ Leave Screenshots page ]]
 
-leavePageConfirmDelete = تایید حذف حساب کاربری
+leavePageRemoveAllData = حذف تمام داده‌ها
 // Note: do not translate 'Firefox Screenshots' when translating this string
 leavePageErrorAddonRequired = برای حذف حساب کاربری خود باید Firefox Screenshots نصب کرده باشید
 leavePageErrorGeneric = خطایی رخ داده است.
