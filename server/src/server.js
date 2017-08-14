@@ -48,7 +48,7 @@ const { b64EncodeJson, b64DecodeJson } = require("./b64");
 const l10n = require("./l10n");
 const multer = require("multer");
 const storage = multer.memoryStorage()
-const upload = multer({ storage: storage });
+const upload = multer({storage});
 
 const PROXY_HEADER_WHITELIST = {
   "content-type": true,
